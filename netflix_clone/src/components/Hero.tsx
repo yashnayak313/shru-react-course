@@ -2,13 +2,15 @@ import heroBg from "../assets/hero-background.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden w-screen bg-gradient-to-br from-black via-gray-900 to-black -ml-[1px]">
+    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden w-full bg-gradient-to-br from-black via-gray-900 to-black">
       <img
         src={heroBg}
         alt="Hero background"
-        className="absolute top-0 -left-[1px] w-[101vw] h-screen object-cover object-center"
-      />{" "}
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+
       <div className="absolute inset-0 bg-gradient-to-br from-black/95 via-black/70 to-black/95 pointer-events-none" />
+
       <div className="relative z-10 text-center max-w-[600px] sm:px-3 md:px-6 flex flex-col items-center w-full">
         <div className="text-white">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 drop-shadow-lg">

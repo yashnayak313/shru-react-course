@@ -3,12 +3,19 @@
 @tailwind utilities;
 
 @layer base {
+  
+
   html,
   body {
     margin: 0;
     padding: 0;
     width: 100vw;
     overflow-x: hidden;
+    @apply bg-background text-foreground;
+  }
+
+  * {
+    @apply border-border outline-ring/50;
   }
 }
 
